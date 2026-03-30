@@ -1,0 +1,22 @@
+name: CI Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate index.html exists
+        run: |
+          if [ ! -f index.html ]; then
+            echo "ERROR: index.html no existe"
+            exit 1
+          fi
+          echo "OK: index.html existe"
