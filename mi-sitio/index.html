@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hola Mundo | Demo Profesional</title>
+
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --background: #0f172a;
+      --text: #e2e8f0;
+      --card: #1e293b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .card h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--primary);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.8rem;
+      color: #64748b;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 25px;
+      }
+
+      .card h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mi Primera Web</h1>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Hola Mundo 👋</h2>
+      <p>Este es un ejemplo profesional de una página HTML moderna, limpia y responsive.</p>
+      <a href="#" class="btn">Comenzar</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 - Desarrollado por Julio Novas
+  </footer>
+
+</body>
+</html>
