@@ -13,10 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Validate index.html exists
+      - name: Validate mi-sitio/index.html exists
         run: |
-          if [ ! -f index.html ]; then
-            echo "ERROR: index.html no existe"
+          if [ ! -f mi-sitio/index.html ]; then
+            echo "ERROR: mi-sitio/index.html no existe"
             exit 1
           fi
-          echo "OK: index.html existe"
+          echo "OK: mi-sitio/index.html existe"
