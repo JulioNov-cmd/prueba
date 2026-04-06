@@ -2,15 +2,15 @@
   "family": "prueba-task",
   "networkMode": "awsvpc",
   "requiresCompatibilities": ["EC2"],
-  "cpu": "1024",
-  "memory": "3072",
+  "cpu": "256",
+  "memory": "512",
   "executionRoleArn": "arn:aws:iam::116981775264:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "prueba-container",
       "image": "116981775264.dkr.ecr.us-east-1.amazonaws.com/prueba:latest",
       "essential": true,
-      "memory": 512,
+      "memory": 256,
       "cpu": 128,
       "portMappings": [
         {
